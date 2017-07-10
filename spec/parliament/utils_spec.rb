@@ -1,11 +1,13 @@
-require "spec_helper"
+require 'spec_helper'
 
 RSpec.describe Parliament::Utils do
-  it "has a version number" do
-    expect(Parliament::Utils::VERSION).not_to be nil
+  include Parliament::Utils
+
+  it "is a module" do
+    expect(Parliament::Utils).to be_a(Module)
   end
 
-  it "does something useful" do
-    expect(false).to eq(true)
+  it "has a version number" do
+    expect(Parliament::Utils::VERSION).not_to be nil
   end
 end
