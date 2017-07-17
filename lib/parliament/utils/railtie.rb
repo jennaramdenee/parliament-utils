@@ -6,7 +6,6 @@ module Parliament
       initializer 'parliament-utils.view_helpers' do
         # require 'parliament/utils/config/environments'
         require 'parliament/utils/config/initializers'
-        # require 'spec/spec_helper'
         ActionView::Base.send(:include, Helpers::ApplicationHelper)
       end
     end

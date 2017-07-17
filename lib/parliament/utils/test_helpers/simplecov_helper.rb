@@ -1,3 +1,4 @@
+require 'coveralls'
 require 'simplecov'
 
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
