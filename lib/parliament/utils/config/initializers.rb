@@ -1,8 +1,7 @@
 # Dir["parliament/utils/initializers/*.rb"].each {|file| require file }
 # Dir["parliament-utils/lib/parliament/utils/config/initializers/*.rb"].each { |f| require f }
 # Dir[File.expand_path "lib/parliament/utils/config/initializers/*.rb"].each{|f| require_relative f}
-
-
+# Dir[File.join(File.dirname(__FILE__), '../parliament/utils/config/initializers', '*.rb')].each { |file| require file }
 
 require 'parliament/utils/config/initializers/airbrake'
 require 'parliament/utils/config/initializers/assets'

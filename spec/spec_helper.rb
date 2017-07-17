@@ -1,21 +1,21 @@
-require 'simplecov'
 require 'coveralls'
-SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
-  Coveralls::SimpleCov::Formatter,
-  SimpleCov::Formatter::HTMLFormatter
-])
-SimpleCov.start
 
 $LOAD_PATH.unshift File.join(__FILE__, '../../lib')
 
 require 'bundler/setup'
 Bundler.setup
 
+# Test files
+require 'parliament/utils/test_helpers/simplecov_helper'
+require 'vcr'
+require 'webmock/rspec'
+
+# Application Files
+require 'parliament'
+require 'parliament/ntriple'
 require 'parliament/utils'
 require 'bandiera/client'
 require 'parliament/grom/decorator'
-require 'vcr'
-require 'webmock/rspec'
 
 WebMock.disable_net_connect!(allow_localhost: true)
 
