@@ -1,6 +1,3 @@
-# Test files
-require 'parliament/utils'
-
 # Application Files
 require 'parliament'
 require 'parliament/ntriple'
