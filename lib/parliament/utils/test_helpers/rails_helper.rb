@@ -1,5 +1,4 @@
 require 'rspec/rails'
-# require 'capybara/rails'
 
 module Parliament
   module Utils
