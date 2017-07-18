@@ -29,6 +29,8 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'coveralls'
   spec.add_dependency 'simplecov'
   spec.add_dependency 'bandiera-client'
+  spec.add_dependency 'pugin'
+  spec.add_dependency 'haml'
 
   spec.add_development_dependency 'bundler', '~> 1.15'
   spec.add_development_dependency 'rake', '~> 10.0'

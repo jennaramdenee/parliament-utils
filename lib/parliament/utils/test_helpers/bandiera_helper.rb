@@ -1,3 +1,6 @@
+require 'bandiera/client'
+require 'pugin/bandiera'
+
 module Parliament
   module Utils
     module TestHelpers
@@ -7,8 +10,7 @@ module Parliament
           #and streamline cassettes
           config.before(:each) do
             allow(BANDIERA_CLIENT).to receive(:enabled?).and_return(false)
-            allow(BANDIERA_CLIENT).to receive(:get_features_for_group).and_return({})
-            # require 'irb'; binding.irb
+            allow(Pugin::PuginBandieraClient::BANDIERA_CLIENT).to receive(:get_features_for_group).and_return({})
           end
         end
       end
