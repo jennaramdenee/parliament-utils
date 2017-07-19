@@ -12,9 +12,7 @@ require 'parliament/grom/decorator'
 module Parliament
   module Utils
     module Helpers
-      def self.include_parliament_helpers
 
-      end
     end
   end
 end
