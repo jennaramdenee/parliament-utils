@@ -9,7 +9,6 @@ require_relative './test_helpers/bandiera_helper'
 module Parliament
   module Utils
     module TestHelpers
-
       include Parliament::Utils::TestHelpers::RailsHelper if defined?(::Rails)
       include Parliament::Utils::TestHelpers::RSpecHelper
       include Parliament::Utils::TestHelpers::SimpleCovHelper
@@ -17,7 +16,6 @@ module Parliament
       include Parliament::Utils::TestHelpers::VCRHelper
       include Parliament::Utils::TestHelpers::WebmockHelper
       include Parliament::Utils::TestHelpers::BandieraHelper
-
     end
   end
 end
