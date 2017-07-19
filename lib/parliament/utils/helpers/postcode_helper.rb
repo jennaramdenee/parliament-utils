@@ -1,10 +1,14 @@
 require 'i18n'
+require 'parliament/utils/helpers/translation_helper' unless defined?(::Rails)
 
 # attr [String] previous_path the path to redirect back to in the case of an error.
 module Parliament
   module Utils
     module Helpers
       module PostcodeHelper
+
+        include Parliament::Utils::Helpers::TranslationHelper unless defined?(::Rails)
+
         attr_accessor :previous_path
 
         # Makes requests to the postcode_lookup endpoint.
