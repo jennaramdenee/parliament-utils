@@ -2,7 +2,6 @@
 
 # Add new mime types for use in respond_to blocks:
 # Mime::Type.register "text/richtext", :rtf
-
 Parliament::Utils::Helpers::ApplicationHelper::API_MIME_TYPE_CONFIG.each do |mime_type|
   primary = mime_type.shift
   alternatives = mime_type

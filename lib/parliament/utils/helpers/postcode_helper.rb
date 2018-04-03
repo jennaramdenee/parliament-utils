@@ -1,5 +1,5 @@
 require 'i18n'
-require 'parliament/utils/helpers/translation_helper' unless defined?(::Rails)
+require 'parliament/utils/helpers/translation_helper'
 
 # attr [String] previous_path the path to redirect back to in the case of an error.
 module Parliament
@@ -7,7 +7,7 @@ module Parliament
     module Helpers
       module PostcodeHelper
 
-        include Parliament::Utils::Helpers::TranslationHelper unless defined?(::Rails)
+        include Parliament::Utils::Helpers::TranslationHelper
 
         attr_accessor :previous_path
 

@@ -11,6 +11,7 @@ require 'parliament/utils/config/initializers/cookies_serializer'
 require 'parliament/utils/config/initializers/filter_parameter_logging'
 require 'parliament/utils/config/initializers/inflections'
 require 'parliament/utils/config/initializers/mime_types'
+require 'parliament/utils/config/initializers/sanitizer' if defined?(Rails)
 require 'parliament/utils/config/initializers/session_store'
 require 'parliament/utils/config/initializers/timeout'
 require 'parliament/utils/config/initializers/wrap_parameters'
